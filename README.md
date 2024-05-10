@@ -8,4 +8,4 @@
 
 ## Brief Explanation
 
-Aplikasi daurin merupakan aplikasi berbasis website yang bertujuan untuk menghubungkan agen sampah sekitar dengan individu dan pelaku usaha
+DaurIn adalah aplikasi waste management berbasis website untuk memberi kemudahan bagi masyarakat dan tempat usaha dalam menyalurkan sampah mereka kepada agen pengelola sampah untuk dikelola dan dimanfaatkan lebih lanjut demi terwujudnya modernisasi dalam pengelolaan sampah
