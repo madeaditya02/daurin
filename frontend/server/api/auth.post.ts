@@ -1,8 +1,8 @@
-export default defineEventHandler(async (event:any) => {
+export default defineEventHandler(async (event) => {
   const {token} = await readBody(event);
   await setUserSession(event, {
     user: {
-      token,
+      token
     }
     // Any extra fields
   })

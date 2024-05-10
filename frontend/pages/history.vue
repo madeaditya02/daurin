@@ -1,9 +1,17 @@
-<script lang="ts" setup>
+<script setup>
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { faPlus, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
 definePageMeta({
   layout: 'default'
 })
+const loggedUser = useState('loggedUser')
+const { data: riwayat } = await useFetch('https://daurin-api-production.up.railway.app/order/customer/' + loggedUser.value.id, {
+  headers: {
+    "Authorization": "Bearer " + loggedUser.value.token
+  }
+})
+console.log(riwayat);
+
 const showDetailBarang = ref(false)
 const detailBarang = ref([
   {
