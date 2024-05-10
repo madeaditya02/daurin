@@ -160,8 +160,8 @@ async function submitOrder(event) {
       </div>
 
       <div class="relative overflow-x-auto mt-6">
-        <table class="w-full text-left rtl:text-right text-gray-500 dark:text-gray-400">
-          <thead class="text-sm text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+        <table class="w-full text-left rtl:text-right text-gray-500">
+          <thead class="text-sm text-gray-700 uppercase bg-gray-50">
             <tr>
               <th scope="col" class="px-4 sm:px-6 py-3">No.</th>
               <th scope="col" class="px-4 sm:px-6 py-3">Jenis Barang</th>
@@ -172,10 +172,9 @@ async function submitOrder(event) {
             </tr>
           </thead>
           <tbody>
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700" v-for="i in 2">
+            <tr class="bg-white border-b" v-for="i in 2">
               <td class="px-4 py-2 sm:px-6 sm:py-4">{{ i }}</td>
-              <th scope="row"
-                class="px-4 py-2 sm:px-6 sm:py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+              <th scope="row" class="px-4 py-2 sm:px-6 sm:py-4 font-medium text-gray-900 whitespace-nowrap">
                 Botol Plastik
               </th>
               <td class="px-4 py-2 sm:px-6 sm:py-4">Rp. 10.000 / kg</td>
@@ -189,7 +188,7 @@ async function submitOrder(event) {
                   </button>
                   <template #item="{ item }">
                     <span class="truncate">{{ item.label }}</span>
-                    <UIcon :name="item.icon" class="flex-shrink-0 h-6 w-6 text-gray-400 dark:text-gray-500 ms-auto" />
+                    <UIcon :name="item.icon" class="flex-shrink-0 h-6 w-6 text-gray-400 ms-auto" />
                   </template>
                 </UDropdown>
               </td>
@@ -237,7 +236,7 @@ async function submitOrder(event) {
           </div>
           <div class="sm:pt-4" v-if="order.status != 'Pending'">
             <input
-              class="block w-full text-sm text-gray-900 border border-gray-300 rounded cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+              class="block w-full text-sm text-gray-900 border border-gray-300 rounded cursor-pointer bg-gray-50 focus:outline-none"
               aria-describedby="file_input_help" id="file_input" type="file" />
           </div>
         </div>

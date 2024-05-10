@@ -45,7 +45,7 @@ window.addEventListener('scroll', (event) => {
             <p>
               Signed in as
             </p>
-            <p class="truncate font-medium text-gray-900 dark:text-white">
+            <p class="truncate font-medium text-gray-900">
               {{ item.label }}
             </p>
           </div>
@@ -55,7 +55,7 @@ window.addEventListener('scroll', (event) => {
 
           <span class="truncate">{{ item.label }}</span>
 
-          <UIcon :name="item.icon" class="flex-shrink-0 h-4 w-4 text-gray-400 dark:text-gray-500 ms-auto" />
+          <UIcon :name="item.icon" class="flex-shrink-0 h-4 w-4 text-gray-400 ms-auto" />
         </template>
       </UDropdown>
     </div>

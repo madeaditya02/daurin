@@ -104,7 +104,7 @@ console.log(data);
 
 
       <div class="relative overflow-x-auto">
-        <table class="w-full mt-6 text-left rtl:text-right text-gray-500 dark:text-gray-400">
+        <table class="w-full mt-6 text-left rtl:text-right text-gray-500">
           <thead class="text-gray-700 uppercase">
             <tr class="hover:bg-gray  -100">
               <th scope="col" class="px-6 py-3">
@@ -125,15 +125,14 @@ console.log(data);
             </tr>
           </thead>
           <tbody>
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-100"
-              v-for="(order, i) in data">
+            <tr class="bg-white border-b hover:bg-gray-100" v-for="(order, i) in data">
               <td class="px-6 py-4">
                 {{ i + 1 }}
               </td>
-              <th scope="row" class="px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white">
+              <th scope="row" class="px-6 py-4 text-gray-900 whitespace-nowrap">
                 <div class="font-semibold text-lg">{{ order.customer.name }}</div>
-                <a href="https://wa.me/+6282236204294" target="_blank"
-                  class="mt-1 text-sm font-normal">{{ order.customer.phone }}</a>
+                <a href="https://wa.me/+6282236204294" target="_blank" class="mt-1 text-sm font-normal">{{
+                  order.customer.phone }}</a>
               </th>
               <td class="px-6 py-4 whitespace-nowrap">
                 <span :class="`px-2.5 py-1 rounded font-bold text-sm badge-${statusColor(order.status)}`">{{

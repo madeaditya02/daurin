@@ -199,12 +199,12 @@ async function nextStep() {
     } catch (error) {
       console.log(error.data);
     }
-    // Swal.fire({
-    //   title: "Pesanan berhasil ditambahkan",
-    //   text: "Silahkan tunggu konfirmasi dari agen",
-    //   icon: "success",
-    //   confirmButtonColor: '#14B8A6'
-    // }).then(() => navigateTo('/'));
+    Swal.fire({
+      title: "Pesanan berhasil ditambahkan",
+      text: "Silahkan tunggu konfirmasi dari agen",
+      icon: "success",
+      confirmButtonColor: '#14B8A6'
+    }).then(() => navigateTo('/'));
   } else {
     step.value++;
   }

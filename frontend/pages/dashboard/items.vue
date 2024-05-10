@@ -27,12 +27,8 @@ definePageMeta({
         Tambah Barang
       </button>
       <div class="relative overflow-x-auto mt-6">
-        <table
-          class="w-full text-left rtl:text-right text-gray-500 dark:text-gray-400"
-        >
-          <thead
-            class="text-sm text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
-          >
+        <table class="w-full text-left rtl:text-right text-gray-500">
+          <thead class="text-sm text-gray-700 uppercase bg-gray-50">
             <tr>
               <th scope="col" class="px-4 sm:px-6 py-3">No.</th>
               <th scope="col" class="px-4 sm:px-6 py-3">Jenis Barang</th>
@@ -42,28 +38,24 @@ definePageMeta({
             </tr>
           </thead>
           <tbody>
-            <tr
-              class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
-            >
+            <tr class="bg-white border-b">
               <td class="px-4 py-2 sm:px-6 sm:py-4">1</td>
-              <th
-                scope="row"
-                class="px-4 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-              >
+              <th scope="row" class="px-4 py-4 font-medium text-gray-900 whitespace-nowrap">
                 Kaleng Bekas
               </th>
               <td class="px-4 py-2 sm:px-6 sm:py-4">kg</td>
               <td class="px-4 py-2 sm:px-6 sm:py-4">Rp. 15.000</td>
               <td class="px-4 py-2 sm:px-6 sm:py-4">
-                <UDropdown :items="items" :ui="{ item: { disabled: 'cursor-text select-text', size: 'text-base', padding: 'px-3 py-2' } }">
-                    <button class="px-3 py-1.5 rounded-md hover:bg-gray-50">
-                      <FontAwesomeIcon :icon="faEllipsisVertical" class="text-xl" />
-                    </button>
-                    <template #item="{ item }">
-                      <span class="truncate">{{ item.label }}</span>
-                      <UIcon :name="item.icon" class="flex-shrink-0 h-6 w-6 text-gray-400 dark:text-gray-500 ms-auto" />
-                    </template>
-                  </UDropdown>
+                <UDropdown :items="items"
+                  :ui="{ item: { disabled: 'cursor-text select-text', size: 'text-base', padding: 'px-3 py-2' } }">
+                  <button class="px-3 py-1.5 rounded-md hover:bg-gray-50">
+                    <FontAwesomeIcon :icon="faEllipsisVertical" class="text-xl" />
+                  </button>
+                  <template #item="{ item }">
+                    <span class="truncate">{{ item.label }}</span>
+                    <UIcon :name="item.icon" class="flex-shrink-0 h-6 w-6 text-gray-400 ms-auto" />
+                  </template>
+                </UDropdown>
               </td>
             </tr>
           </tbody>
